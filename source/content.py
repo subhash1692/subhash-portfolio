@@ -6,6 +6,7 @@ PROFILE = {
     "title": "Principal / Lead Data Platform Architect",
     "email": "subhash1692@gmail.com",
     "github": "https://github.com/subhash1692",
+    "linkedin": "https://www.linkedin.com/in/subhash-subhash-78b2a236/",
     "public_project": "https://github.com/subhash1692/azde-tfinfra-prj-template",
     "experience": "15+",
 }
