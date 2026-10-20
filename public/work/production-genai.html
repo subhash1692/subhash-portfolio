@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#091522">
+  <meta name="description" content="Configurable LLM extraction and classification pipelines with schema validation, retries, observability, and inference-cost discipline.">
+  <meta name="author" content="Subhash">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Turn document AI prototypes into dependable jobs. | Subhash">
+  <meta property="og:description" content="Configurable LLM extraction and classification pipelines with schema validation, retries, observability, and inference-cost discipline.">
+  <meta property="og:image" content="../assets/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Turn document AI prototypes into dependable jobs. | Subhash</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../script.js" defer></script>
+</head>
+<body class="case-page">
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div class="announcement">
+    <div class="container announcement-inner"><span class="status-dot" aria-hidden="true"></span> Exploring global Principal / Lead Data Platform and founding platform engineering opportunities <span class="announce-arrow" aria-hidden="true">↗</span></div>
+  </div>
+  <header class="site-header" id="top">
+    <nav class="container navigation" aria-label="Main navigation">
+      <a class="brand" href="../index.html" aria-label="Subhash, home"><span class="brand-mark">S<span class="mark-dot">.</span></span><span class="brand-word">SUBHASH<span class="brand-slash"> / </span><span class="brand-descriptor">PLATFORM ENGINEERING</span></span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="site-links" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="site-links">
+        <a href="../index.html#work">Selected work</a>
+        <a href="../index.html#expertise">Expertise</a>
+        <a href="../index.html#about">About</a>
+        <a class="nav-contact" href="../index.html#contact">Let's connect <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+  
+<section class="case-hero">
+  <div class="container"><a class="back-link" href="../index.html#work">← Back to selected work</a><p class="eyebrow">04 / AI DATA PLATFORM ENGINEERING</p><h1>Turn document AI prototypes into dependable jobs.</h1><p class="case-subtitle">An LLM demo becomes a platform capability only when it can be retried, audited, and run without wasting inference budget.</p><div class="case-tags"><span>Python</span><span>LLM endpoints</span><span>JSON validation</span><span>Databricks</span></div></div>
+  <div class="case-hero-decoration" aria-hidden="true"><span></span><span></span><span></span></div>
+</section>
+<section class="section case-body">
+  <div class="container case-layout"><div class="case-sidebar"><span class="case-side-label">THE CHALLENGE</span><h2>Start with the problem.</h2></div><div class="case-prose"><p>Document-processing workloads often encounter inconsistent outputs, network timeouts, rate limits, evolving field requirements, and uncertain rerun costs. Their outputs still need to integrate with governed analytical tables.</p></div></div>
+  <div class="container case-layout"><div class="case-sidebar"><span class="case-side-label">MY ENGINEERING SCOPE</span><h2>From decisions to delivery.</h2></div><div class="case-prose"><p>I develop production-oriented document pipelines for classification, summarization, and structured field extraction, with per-use-case configuration and repeatable job packaging.</p></div></div>
+  <div class="container case-architecture"><div class="case-architecture-title"><span>REFERENCE FLOW</span><span>Illustrative, not a client system diagram</span></div><ol class="architecture-steps"><li><span>01</span>Documents</li><li><span>02</span>Config + prompts</li><li><span>03</span>LLM endpoint</li><li><span>04</span>Schema checks</li><li><span>05</span>Delta tables</li><li><span>06</span>Downstream users</li></ol></div>
+  <div class="container case-approach"><p class="eyebrow eyebrow-dark">DESIGN DECISIONS</p><h2>How I approach it.</h2><div class="decision-grid"><div class="decision"><span class="decision-index">01</span><h3>Configuration per use case</h3><p>Prompts, model endpoints, extracted fields, and parsing rules are stored as controllable configuration.</p></div><div class="decision"><span class="decision-index">02</span><h3>Validate untrusted model output</h3><p>Schema checks, malformed-JSON handling, and explicit error states prevent silent downstream corruption.</p></div><div class="decision"><span class="decision-index">03</span><h3>Rerun only what changed</h3><p>Idempotency and processing-state checks avoid paying to reprocess documents unnecessarily.</p></div><div class="decision"><span class="decision-index">04</span><h3>Ship through the platform</h3><p>Python code and scheduled workflows are packaged, tested, and deployed with the same release disciplines as data jobs.</p></div></div></div>
+  <div class="container case-outcomes"><p class="eyebrow eyebrow-dark">INTENDED ENGINEERING OUTCOMES</p><h2>What the design enables.</h2><div class="outcome-list"><div><span aria-hidden="true">↗</span><p>Repeatable document processing with recoverable failures</p></div><div><span aria-hidden="true">↗</span><p>Structured data ready for governance and analytics</p></div><div><span aria-hidden="true">↗</span><p>Guardrails for inference cost and operational reliability</p></div></div><p class="outcome-note">Qualitative design outcomes; client performance and cost figures are not disclosed or estimated.</p></div>
+  <div class="container case-stack"><span>TECHNOLOGIES & PATTERNS</span><p>Python · REST APIs · LLM serving endpoints · Databricks jobs · Delta Lake · JSON schema checks · CI/CD</p></div>
+</section>
+<section class="next-work"><div class="container next-work-content"><div><p class="eyebrow">NEXT CASE STUDY</p><h2>From scattered sources to trusted data products.</h2></div><a href="enterprise-lakehouse.html" class="button button-primary">Explore next <span aria-hidden="true">↗</span></a></div></section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <a class="footer-brand" href="../index.html">SUBHASH <span>↗</span></a>
+      <p>Thoughtfully engineered systems. Built to last.</p>
+      <div class="footer-links">
+        <a href="mailto:subhash1692@gmail.com">Email</a>
+        <a href="https://github.com/subhash1692" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        <a href="../assets/Subhash_Data_Platform_Architect_Resume.pdf" download>Résumé ↓</a>
+      </div>
+    </div>
+    <div class="container footer-meta"><span>© <span id="year">2026</span> Subhash</span><span>Private client details are intentionally omitted.</span></div>
+  </footer>
+</body>
+</html>

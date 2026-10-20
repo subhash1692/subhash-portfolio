@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#091522">
+  <meta name="description" content="{{ description }}">
+  <meta name="author" content="Subhash">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:description" content="{{ description }}">
+  <meta property="og:image" content="{{ root }}assets/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>{{ page_title }}</title>
+  <link rel="icon" type="image/svg+xml" href="{{ root }}assets/favicon.svg">
+  <link rel="stylesheet" href="{{ root }}styles.css">
+  <script src="{{ root }}script.js" defer></script>
+</head>
+<body class="{{ body_class }}">
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div class="announcement">
+    <div class="container announcement-inner"><span class="status-dot" aria-hidden="true"></span> Exploring global Principal / Lead Data Platform and founding platform engineering opportunities <span class="announce-arrow" aria-hidden="true">↗</span></div>
+  </div>
+  <header class="site-header" id="top">
+    <nav class="container navigation" aria-label="Main navigation">
+      <a class="brand" href="{{ root }}index.html" aria-label="Subhash, home"><span class="brand-mark">S<span class="mark-dot">.</span></span><span class="brand-word">SUBHASH<span class="brand-slash"> / </span><span class="brand-descriptor">PLATFORM ENGINEERING</span></span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="site-links" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="site-links">
+        <a href="{{ root }}index.html#work">Selected work</a>
+        <a href="{{ root }}index.html#expertise">Expertise</a>
+        <a href="{{ root }}index.html#about">About</a>
+        <a class="nav-contact" href="{{ root }}index.html#contact">Let's connect <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+  {% block main %}{% endblock %}
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <a class="footer-brand" href="{{ root }}index.html">SUBHASH <span>↗</span></a>
+      <p>Thoughtfully engineered systems. Built to last.</p>
+      <div class="footer-links">
+        <a href="mailto:{{ profile.email }}">Email</a>
+        <a href="{{ profile.github }}" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        <a href="{{ root }}assets/Subhash_Data_Platform_Architect_Resume.pdf" download>Résumé ↓</a>
+      </div>
+    </div>
+    <div class="container footer-meta"><span>© <span id="year">2026</span> Subhash</span><span>Private client details are intentionally omitted.</span></div>
+  </footer>
+</body>
+</html>

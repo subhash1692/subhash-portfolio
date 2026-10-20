@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#091522">
+  <meta name="description" content="A configuration-driven enterprise lakehouse pattern, designed for repeatable ingestion, reliable transformations, and governed consumption.">
+  <meta name="author" content="Subhash">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="From scattered sources to trusted data products. | Subhash">
+  <meta property="og:description" content="A configuration-driven enterprise lakehouse pattern, designed for repeatable ingestion, reliable transformations, and governed consumption.">
+  <meta property="og:image" content="../assets/og-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>From scattered sources to trusted data products. | Subhash</title>
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="stylesheet" href="../styles.css">
+  <script src="../script.js" defer></script>
+</head>
+<body class="case-page">
+  <a href="#main" class="skip-link">Skip to content</a>
+  <div class="announcement">
+    <div class="container announcement-inner"><span class="status-dot" aria-hidden="true"></span> Exploring global Principal / Lead Data Platform and founding platform engineering opportunities <span class="announce-arrow" aria-hidden="true">↗</span></div>
+  </div>
+  <header class="site-header" id="top">
+    <nav class="container navigation" aria-label="Main navigation">
+      <a class="brand" href="../index.html" aria-label="Subhash, home"><span class="brand-mark">S<span class="mark-dot">.</span></span><span class="brand-word">SUBHASH<span class="brand-slash"> / </span><span class="brand-descriptor">PLATFORM ENGINEERING</span></span></a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="site-links" aria-expanded="false"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="site-links">
+        <a href="../index.html#work">Selected work</a>
+        <a href="../index.html#expertise">Expertise</a>
+        <a href="../index.html#about">About</a>
+        <a class="nav-contact" href="../index.html#contact">Let's connect <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+  
+<section class="case-hero">
+  <div class="container"><a class="back-link" href="../index.html#work">← Back to selected work</a><p class="eyebrow">01 / LAKEHOUSE ENGINEERING</p><h1>From scattered sources to trusted data products.</h1><p class="case-subtitle">Bringing new data domains online should not require reinventing an ingestion pipeline every time.</p><div class="case-tags"><span>Azure Data Factory</span><span>Databricks</span><span>PySpark</span><span>Delta Lake</span></div></div>
+  <div class="case-hero-decoration" aria-hidden="true"><span></span><span></span><span></span></div>
+</section>
+<section class="section case-body">
+  <div class="container case-layout"><div class="case-sidebar"><span class="case-side-label">THE CHALLENGE</span><h2>Start with the problem.</h2></div><div class="case-prose"><p>Enterprise data arrives from relational systems, document databases, file shares, and application APIs. Each source behaves differently, but the delivery platform still needs consistent scheduling, auditing, replay, and governance.</p></div></div>
+  <div class="container case-layout"><div class="case-sidebar"><span class="case-side-label">MY ENGINEERING SCOPE</span><h2>From decisions to delivery.</h2></div><div class="case-prose"><p>I design both the reusable ingestion path and the transformations that turn source records into dependable analytical data. This includes source-specific adapters, common configuration, lakehouse transformations, and operational recovery patterns.</p></div></div>
+  <div class="container case-architecture"><div class="case-architecture-title"><span>REFERENCE FLOW</span><span>Illustrative, not a client system diagram</span></div><ol class="architecture-steps"><li><span>01</span>Operational sources</li><li><span>02</span>ADF / APIs</li><li><span>03</span>ADLS + Delta</li><li><span>04</span>Databricks processing</li><li><span>05</span>Unity Catalog</li><li><span>06</span>Analytics &amp; applications</li></ol></div>
+  <div class="container case-approach"><p class="eyebrow eyebrow-dark">DESIGN DECISIONS</p><h2>How I approach it.</h2><div class="decision-grid"><div class="decision"><span class="decision-index">01</span><h3>Configure instead of duplicate</h3><p>Metadata-driven source definitions describe extraction modes, parameters, data quality rules, dependencies, and write strategies.</p></div><div class="decision"><span class="decision-index">02</span><h3>Build reliable incremental paths</h3><p>Full and incremental processing support deduplication, upserts, backfills, schema handling, and repeatable error recovery.</p></div><div class="decision"><span class="decision-index">03</span><h3>Separate stages by responsibility</h3><p>A medallion architecture organizes raw evidence, cleaned business entities, and modeled tables for downstream users.</p></div><div class="decision"><span class="decision-index">04</span><h3>Check correctness, not just execution</h3><p>Reconciliation checks compare volume, keys, aggregates, and expected change behavior before data is promoted.</p></div></div></div>
+  <div class="container case-outcomes"><p class="eyebrow eyebrow-dark">INTENDED ENGINEERING OUTCOMES</p><h2>What the design enables.</h2><div class="outcome-list"><div><span aria-hidden="true">↗</span><p>Reusable source onboarding patterns</p></div><div><span aria-hidden="true">↗</span><p>Replayable and observable processing</p></div><div><span aria-hidden="true">↗</span><p>Governed, query-ready tables and semantic views</p></div></div><p class="outcome-note">Qualitative design outcomes; client performance and cost figures are not disclosed or estimated.</p></div>
+  <div class="container case-stack"><span>TECHNOLOGIES & PATTERNS</span><p>Azure Data Factory · ADLS Gen2 · Databricks · PySpark · Spark SQL · Delta Lake · Unity Catalog</p></div>
+</section>
+<section class="next-work"><div class="container next-work-content"><div><p class="eyebrow">NEXT CASE STUDY</p><h2>Deployment as a repeatable engineering system.</h2></div><a href="deployment-engineering.html" class="button button-primary">Explore next <span aria-hidden="true">↗</span></a></div></section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <a class="footer-brand" href="../index.html">SUBHASH <span>↗</span></a>
+      <p>Thoughtfully engineered systems. Built to last.</p>
+      <div class="footer-links">
+        <a href="mailto:subhash1692@gmail.com">Email</a>
+        <a href="https://github.com/subhash1692" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        <a href="../assets/Subhash_Data_Platform_Architect_Resume.pdf" download>Résumé ↓</a>
+      </div>
+    </div>
+    <div class="container footer-meta"><span>© <span id="year">2026</span> Subhash</span><span>Private client details are intentionally omitted.</span></div>
+  </footer>
+</body>
+</html>

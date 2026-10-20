@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block main %}
+<section class="case-hero">
+  <div class="container"><a class="back-link" href="../index.html#work">← Back to selected work</a><p class="eyebrow">{{ case.number }} / {{ case.category }}</p><h1>{{ case.title }}</h1><p class="case-subtitle">{{ case.lead }}</p><div class="case-tags">{% for chip in case.chips %}<span>{{ chip }}</span>{% endfor %}</div></div>
+  <div class="case-hero-decoration" aria-hidden="true"><span></span><span></span><span></span></div>
+</section>
+<section class="section case-body">
+  <div class="container case-layout"><div class="case-sidebar"><span class="case-side-label">THE CHALLENGE</span><h2>Start with the problem.</h2></div><div class="case-prose"><p>{{ case.context }}</p></div></div>
+  <div class="container case-layout"><div class="case-sidebar"><span class="case-side-label">MY ENGINEERING SCOPE</span><h2>From decisions to delivery.</h2></div><div class="case-prose"><p>{{ case.responsibility }}</p></div></div>
+  <div class="container case-architecture"><div class="case-architecture-title"><span>REFERENCE FLOW</span><span>Illustrative, not a client system diagram</span></div><ol class="architecture-steps">{% for step in case.steps %}<li><span>{{ '%02d' % loop.index }}</span>{{ step }}</li>{% endfor %}</ol></div>
+  <div class="container case-approach"><p class="eyebrow eyebrow-dark">DESIGN DECISIONS</p><h2>How I approach it.</h2><div class="decision-grid">{% for title, description in case.approach %}<div class="decision"><span class="decision-index">0{{ loop.index }}</span><h3>{{ title }}</h3><p>{{ description }}</p></div>{% endfor %}</div></div>
+  <div class="container case-outcomes"><p class="eyebrow eyebrow-dark">INTENDED ENGINEERING OUTCOMES</p><h2>What the design enables.</h2><div class="outcome-list">{% for o in case.outcomes %}<div><span aria-hidden="true">↗</span><p>{{ o }}</p></div>{% endfor %}</div><p class="outcome-note">Qualitative design outcomes; client performance and cost figures are not disclosed or estimated.</p></div>
+  <div class="container case-stack"><span>TECHNOLOGIES & PATTERNS</span><p>{{ case.stack }}</p></div>
+</section>
+<section class="next-work"><div class="container next-work-content"><div><p class="eyebrow">NEXT CASE STUDY</p><h2>{{ next_case.title }}</h2></div><a href="{{ next_case.slug }}.html" class="button button-primary">Explore next <span aria-hidden="true">↗</span></a></div></section>
+{% endblock %}
